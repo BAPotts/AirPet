@@ -16,6 +16,7 @@ If you finish developing the minimum viable product (MVP) with time to spare, wh
 5. Implement background checks/training program for sitters(care.com model)
 6. Guided walkthrough during registration process
 7. Integration of sitter/pet owner profiles (for users who want to hire sitters and also be sitters/travelers)
+8. Messaging between users
 
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
