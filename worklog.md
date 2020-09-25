@@ -7,3 +7,5 @@ September 25th, 2020
 *Research React/ASP.NET stack
 
 *Read about dotnet react/asp.net command  
+
+*Research bootstrap for react
