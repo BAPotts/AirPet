@@ -5,3 +5,5 @@ September 25th, 2020
 *Reread lessons on capstone selection and planning
 
 *Research React/ASP.NET stack
+
+*Read about dotnet react/asp.net command  
