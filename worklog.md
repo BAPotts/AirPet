@@ -21,3 +21,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * research many-to-many relationship structure in firebase
 
 * begin capstone proposal editing
+
+* Research user messaging or chat functionality
