@@ -19,3 +19,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * continue instocktracker study
 
 * research many-to-many relationship structure in firebase
+
+* begin capstone proposal editing
