@@ -9,3 +9,5 @@ September 25th, 2020
 *Read about dotnet react/asp.net command  
 
 *Research bootstrap for react
+
+*Revisit API bulding lessons in c#/.net unit
