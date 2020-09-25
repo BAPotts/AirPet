@@ -15,3 +15,5 @@ https://react-bootstrap.github.io/
 https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-api-authorization?view=aspnetcore-3.1&viewFallbackFrom=aspnetcore-2.2
 
 * Study instocktracker team week project for backend architecture reference
+
+*continue instocktracker study
