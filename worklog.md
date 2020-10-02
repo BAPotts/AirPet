@@ -25,3 +25,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * Research user messaging or chat functionality
 
 * Research complex database relationships in c#/.net framework
+
+* Read about building out user model with identity
