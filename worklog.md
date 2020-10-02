@@ -27,3 +27,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * Research complex database relationships in c#/.net framework
 
 * Read about building out user model with identity
+
+* Panic for an hour when I realize I don't know how to connect everything I want to implement
