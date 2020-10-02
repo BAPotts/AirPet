@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using AirPet.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace AirPet
 {
@@ -26,6 +27,9 @@ namespace AirPet
       services.AddEntityFrameworkMySql()
         .AddDbContext<AirPetContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
+      services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<AirPetContext>()
+                .AddDefaultTokenProviders();
     }
 
     public void Configure(IApplicationBuilder app)
@@ -33,6 +37,8 @@ namespace AirPet
       app.UseStaticFiles();
 
       app.UseDeveloperExceptionPage();
+
+      app.UseAuthentication();
 
       app.UseMvc(routes =>
       {
