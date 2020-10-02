@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace AirPet.ViewModels{
+namespace AirPet.ViewModels
+{
   public class RegisterViewModel
   {
     [Required]
