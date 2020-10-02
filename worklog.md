@@ -23,3 +23,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * begin capstone proposal editing
 
 * Research user messaging or chat functionality
+
+* Research complex database relationships in c#/.net framework
