@@ -1,4 +1,4 @@
-using System.ConponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace AirPet.ViewModels{
   public class RegisterViewModel
