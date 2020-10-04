@@ -17,6 +17,10 @@ namespace AirPet.ViewModels
     [Display(Name = "Email")]
     public string Email { get; set; }
 
+    [Required] 
+    [Display(Name = "Bio")]
+    public string Bio { get; set; }
+
     [Required]
     [DataType(DataType.Password)]
     [Display(Name = "Password")]

@@ -3,14 +3,16 @@ using System;
 using AirPet.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AirPet.Migrations
 {
     [DbContext(typeof(AirPetContext))]
-    partial class AirPetContextModelSnapshot : ModelSnapshot
+    [Migration("20201002235707_Bio")]
+    partial class Bio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
