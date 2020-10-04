@@ -30,6 +30,7 @@ namespace AirPet
       services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AirPetContext>()
                 .AddDefaultTokenProviders();
+
       services.Configure<IdentityOptions>(options =>
       {
           options.Password.RequireDigit = false;
