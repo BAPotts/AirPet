@@ -8,11 +8,6 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    
-    var userStore = new UserStore<ApplicationUser>(new AirPetContext());
-    var manager = new UserManager<ApplicationUser>(userStore);
-    var currentUser = manager.FindById(User.Identity.GetUserId());
-
     <p>Hello @User.Identity.Name!</p>
     <p>Bio: @currentUser.Bio</p>
 
