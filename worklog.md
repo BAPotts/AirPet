@@ -31,3 +31,5 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-ap
 * Panic for an hour when I realize I don't know how to connect everything I want to implement
 
 * watch tutorial on building out user profile
+
+* After further research I've realized building a profile based network website is very involved and I'm running into roadblocks and overwhelm. I've decided to switch gears and focus on building out a more static application to communicate my project idea so I have something to present. The point of this assignment isn't perfection, it's about the process!
