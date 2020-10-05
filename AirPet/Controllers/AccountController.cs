@@ -63,6 +63,10 @@ namespace AirPet.Controllers
           return View();
       }
     }
+    public ActionResult LogOut()
+    {
+        return View();
+    }
     [HttpPost]
     public async Task<ActionResult> LogOff()
     {
