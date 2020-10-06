@@ -3,3 +3,7 @@
   width: 50%;
   height: 300%;
 }
+.jumbotron {
+  background-image: url("../img/WalkDog.jpg");
+  background-size: cover;
+}
