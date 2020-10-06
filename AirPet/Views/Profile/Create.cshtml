@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AirPet.Models.Profile
+
+<h2>Add a New Recipe</h2>
+
+@using(Html.BeginForm())
+{
+  @Html.LabelFor(model => model.FirstName)
+  @Html.TextBoxFor(model => model.FirstName)
+
+  @Html.LabelFor(model => model.LastName)
+  @Html.TextBoxFor(model => model.LastName)
+
+  @Html.LabelFor(model => model.Location)
+  @Html.TextBoxFor(model => model.Location)
+
+  @Html.LabelFor(model => model.Pets)
+  @Html.TextBoxFor(model => model.Location)
+
+  @Html.LabelFor(model => model.Bio)
+  @Html.TextBoxFor(model => model.Bio)
+
+<input type="submit" value="Add this Recipe" class="btn btn-default" />
+}
