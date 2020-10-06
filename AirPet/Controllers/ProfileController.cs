@@ -24,7 +24,8 @@ namespace AirPet.Controllers
 
     public ActionResult Index()
     {
-      return View();
+      List<Profile> ProfileList = _db.Profile.ToList();
+      return View(ProfileList);
     }
 
     public ActionResult Create()
@@ -41,6 +42,12 @@ namespace AirPet.Controllers
       // }
       _db.SaveChanges();
       return RedirectToAction("Index");
+    }
+
+    public ActionResult Details(int id)
+    {
+      var thisProfile = _db.Profile.FirstOrDefault(profile =>profile.ProfileId == id);
+      return View(thisProfile);
     }
   }
 }

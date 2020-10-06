@@ -1,6 +1,12 @@
 @{
   Layout = "_Layout";
 }
+@using AirPet.Models;
+@model List< AirPet.Models.Profile>;
 
 <h1>Profile Index</h1>
 <p>@Html.ActionLink("Create Profile", "Create")</p></h1>
+@foreach(Profile profile in Model)
+{
+  <li>@Html.ActionLink("My Profile", "Details", new { id = profile.ProfileId })</li>
+}
