@@ -8,5 +8,5 @@
 <p>@Html.ActionLink("Create Profile", "Create")</p></h1>
 @foreach(Profile profile in Model)
 {
-  <li>@Html.ActionLink("My Profile", "Details", new { id = profile.ProfileId })</li>
+  @Html.ActionLink("My Profile", "Details", new { id = profile.ProfileId })
 }
