@@ -16,7 +16,7 @@
 {
   <li>@Html.ActionLink($"{location.Name}", "Details", new { id = location.LocationId })</li>
 }
-
+<img src="~/img/$'{location.LocationId}'.jpg" class="img-responsive" style="width:100%" alt="Image">
 <p>@Html.ActionLink("Add new location", "Create")</p>
 
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
