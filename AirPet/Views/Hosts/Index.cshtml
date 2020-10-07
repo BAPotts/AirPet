@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AirPet.Models;
+@model List<AirPet.Models.Host>;
+
+<h1>Hosts</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No items have been added yet!</h3>
+} 
+
+@foreach (Host host in Model)
+{
+  <li>@Html.ActionLink($"{host.Name}", "Details", new { id = host.HostId }) | @host.Location.Name</li>
+}
+
+<p>@Html.ActionLink("Add new item", "Create")</p>
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

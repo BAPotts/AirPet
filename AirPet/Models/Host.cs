@@ -7,6 +7,6 @@ namespace AirPet.Models
     public string Pets { get; set; }
     public string Bio { get; set; }
     public int LocationId { get; set; }
-    public virtual Location Location { get; set; }
+    public Location Location { get; set; }
   }
 }
