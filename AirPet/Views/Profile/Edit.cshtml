@@ -1,0 +1,32 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AirPet.Models
+@model AirPet.Models.Profile
+
+@using(Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.ProfileId)
+  <div class="container-fluid">
+    <h1>My Profile</h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <img style="border-radius: 100%" src="~/img/me.jpeg">
+        <br><br>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Name: </strong>@Html.TextBoxFor(model => model.FirstName)</li>
+          <li class="list-group-item"><strong>Location: </strong>@Html.TextBoxFor(model => model.Location)</li>
+          <li class="list-group-item"><strong>Pets: </strong>@Html.TextBoxFor(model => model.Pets)</li>
+        </ul>
+      </div>
+      <div style="justify-content: center" class="col-sm-9">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>About Me</strong></div>
+          <div class="panel-body">@Html.TextBoxFor(model => model.Bio)</div>
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-default" />
+      </div>
+  </div>
+}

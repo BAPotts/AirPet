@@ -4,6 +4,23 @@
 
 @model AirPet.Models.Host
 
-<h2>Host Details</h2>
-<hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<div class="container-fluid">
+  <h1>My Profile</h1>
+  <div class="row">
+  <div class="col-sm-3">
+    <img style="border-radius: 100%" src="~/img/me.jpeg">
+    <br><br>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Name: </strong>@Html.DisplayFor(model => model.Name)</li>
+      <li class="list-group-item"><strong>Location: </strong>@Html.DisplayFor(model => model.Location)</li>
+      <li class="list-group-item"><strong>Pets: </strong>@Html.DisplayFor(model => model.Pets)</li>
+    </ul>
+  </div>
+  <div style="justify-content: center" class="col-sm-9">
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>About Me</strong></div>
+      <div class="panel-body">@Html.DisplayFor(model => model.Bio)</div>
+      </div>
+    </div>
+  </div>
+</div>

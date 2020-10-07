@@ -49,5 +49,18 @@ namespace AirPet.Controllers
       var thisProfile = _db.Profile.FirstOrDefault(profile =>profile.ProfileId == id);
       return View(thisProfile);
     }
+     public ActionResult Edit(int id)
+    {
+      var thisProfile = _db.Profile.FirstOrDefault(profile => profile.ProfileId == id);
+      return View(thisProfile);
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Profile profile)
+    {
+      _db.Entry(profile).State = EntityState.Modified;
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }

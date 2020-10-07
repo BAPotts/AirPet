@@ -21,6 +21,10 @@
   color: black;
 }
 
+body {
+  /* background-image: url("../img/WalkDog.jpg"); */
+  background-color: solid purple;
+}
 
 /* .push-spaces {
   height: 300px;
