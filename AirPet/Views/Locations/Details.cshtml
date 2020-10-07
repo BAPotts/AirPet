@@ -10,10 +10,10 @@
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
 <ul>
-@* @if (@Model.Hosts.Count == 0)
+@if (@Model.Hosts.Count == 0)
 {
   <p>no items found</p>
-} *@
+}
 
 @foreach (Host host in @Model.Hosts)
 {

@@ -36,7 +36,9 @@ namespace AirPet.Controllers
 
     public ActionResult Details(int id)
     {
-      Location thisLocation = _db.Locations.FirstOrDefault(location => location.LocationId == id);
+      Location thisLocation = _db.Locations
+      .Include(location => location.Hosts)
+      .FirstOrDefault(location => location.LocationId ==id);
       return View(thisLocation);
     }
 
