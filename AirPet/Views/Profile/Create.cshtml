@@ -4,24 +4,27 @@
 
 @model AirPet.Models.Profile
 
-<h2>Create your profile</h2>
-
 @using(Html.BeginForm())
 {
-  @Html.LabelFor(model => model.FirstName)
-  @Html.TextBoxFor(model => model.FirstName)
-
-  @Html.LabelFor(model => model.LastName)
-  @Html.TextBoxFor(model => model.LastName)
-
-  @Html.LabelFor(model => model.Location)
-  @Html.TextBoxFor(model => model.Location)
-
-  @Html.LabelFor(model => model.Pets)
-  @Html.TextBoxFor(model => model.Location)
-
-  @Html.LabelFor(model => model.Bio)
-  @Html.TextBoxFor(model => model.Bio)
-
-<input type="submit" value="Update" class="btn btn-default" />
+  <div class="container-fluid">
+    <h1>My Profile</h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <img style="border-radius: 100%" src="~/img/me.jpeg">
+        <br><br>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Name: </strong>@Html.TextBoxFor(model => model.FirstName)</li>
+          <li class="list-group-item"><strong>Location: </strong>@Html.TextBoxFor(model => model.Location)</li>
+          <li class="list-group-item"><strong>Pets: </strong>@Html.TextBoxFor(model => model.Pets)</li>
+        </ul>
+      </div>
+      <div style="justify-content: center" class="col-sm-9">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>About Me</strong></div>
+          <div class="panel-body">@Html.TextBoxFor(model => model.Bio)</div>
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-default" />
+      </div>
+  </div>
 }
