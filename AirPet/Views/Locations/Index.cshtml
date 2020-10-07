@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AirPet.Models;
+@model List<AirPet.Models.Location>;
+
+<h1>Destinations</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No destinations have been added yet!</h3>
+} 
+
+@foreach (Location location in Model)
+{
+  <li>@Html.ActionLink($"{location.Name}", "Details", new { id = location.LocationId })</li>
+}
+
+<p>@Html.ActionLink("Add new location", "Create")</p>
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
