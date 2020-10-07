@@ -5,17 +5,24 @@
 @using AirPet.Models
 @model AirPet.Models.Profile
 
-<h1>My Profile</h1>
-<div class="row">
-  <div class="col-sm-4">
+<div class="container-fluid">
+  <h1>My Profile</h1>
+  <div class="row">
+  <div class="col-sm-3">
+    <img style="border-radius: 100%" src="~/img/me.jpeg">
+    <br><br>
     <ul class="list-group">
-      <li class="list-group-item">@Html.DisplayFor(model => model.FirstName)</li>
+      <li class="list-group-item"><strong>Name: </strong>@Html.DisplayFor(model => model.FirstName)</li>
       <li class="list-group-item">@Html.DisplayFor(model => model.Location)</li>
       <li class="list-group-item">@Html.DisplayFor(model => model.Pets)</li>
     </ul>
   </div>
-  <div class="col-sm-8">
-    <h2>@Html.DisplayFor(model => model.Bio)</h2>
+  <div style="justify-content: center" class="col-sm-9">
+    <div style="width: 80%" class="panel panel-default">
+      <div class="panel-heading">About Me</div>
+      <div class="panel-body">@Html.DisplayFor(model => model.Bio)</div>
+      </div>
+    </div>
   </div>
 </div>
 @* <h2>@Html.DisplayFor(model => model.FirstName)</h2>
