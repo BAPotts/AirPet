@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AirPet.Models.Host
+
+<h2>Add a New Host</h2>
+
+@using(Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+
+  @Html.LabelFor(model => model.Location)
+  @Html.TextBoxFor(model => model.Location)
+
+  @Html.LabelFor(model => model.Pets)
+  @Html.TextBoxFor(model => model.Pets)
+
+  @Html.LabelFor(model => model.Bio)
+  @Html.TextBoxFor(model => model.Bio)
+
+  @Html.LabelFor(model => model.Location)
+  @Html.DropDownList("LocationId")
+
+<input type="submit" value="Create Host" class="btn btn-default" />
+}
