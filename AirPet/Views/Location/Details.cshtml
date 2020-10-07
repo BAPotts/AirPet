@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AirPet.Models;
+@model AirPet.Models.Location;
+
+<h2>Location Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+
+<ul>
+@if (@Model.Hosts.Count == 0)
+{
+  <p>no items found</p>
+}
+
+@foreach (Host host in @Model.Hosts)
+{
+  <li>Description: @host.Name</li>
+}
+</ul>
