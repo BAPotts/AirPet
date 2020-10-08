@@ -1,4 +1,4 @@
-<h1 align='center'><img width='900' height='450' src=''><br>
+<h1 align='center'><img width='900' height='450' src='AirPet/wwwroot/img/WalkDog.jpg'><br>
 
 
 **<h1 align = 'center'>AirPET**
@@ -34,8 +34,6 @@ As a user I should be able to:
               * type of pet
 
 * See a list of users who match criteria
-
-# **REQUIREMENTS**
 
 # **SETUP**
 
