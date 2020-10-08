@@ -13,15 +13,32 @@
     <img  class="img-responsive" style="border-radius: 100%; width:100%" src= @imgUrl>
     <br><br>
     <ul class="list-group">
-      <li class="list-group-item"><strong>Name: </strong>@Html.DisplayFor(model => model.Name)</li>
+      <li style="background-color: black;  color: white" class="list-group-item"><strong>Info</strong></li>
       <li class="list-group-item"><strong>Location: </strong>@Html.DisplayFor(model => model.Location)</li>
       <li class="list-group-item"><strong>Pets: </strong>@Html.DisplayFor(model => model.Pets)</li>
     </ul>
   </div>
   <div style="justify-content: center" class="col-sm-9">
-    <div class="panel panel-default">
-      <div class="panel-heading"><strong>About Me</strong></div>
-      <div class="panel-body">@Html.DisplayFor(model => model.Bio)</div>
+    <div class= "row">
+      <div  class="panel">
+        <div style="background-color: black; color: white" class="panel-heading"><strong>About Me</strong></div>
+        <div class="panel-body">@Html.DisplayFor(model => model.Bio)</div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-4">
+        <img  class="img-responsive" style="border-radius: 100%" src= "~/img/cat1.jpg">
+        <h2>Monty</h2>
+      </div>
+      <div class="col-md-4">
+        <img  class="img-responsive" style="border-radius: 100%" src="~/img/cat2.jpg">
+        <h2>Garth</h2>
+      </div>
+      <div class="col-md-4">
+        
+        <img  class="img-responsive" style="border-radius: 100%" src="~/img/cat3.jpg">
+        <h2>Mr. Watermelon</h2>
       </div>
     </div>
   </div>
