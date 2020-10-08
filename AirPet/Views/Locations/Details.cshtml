@@ -4,8 +4,15 @@
 
 @using AirPet.Models;
 @model AirPet.Models.Location;
+@{
+  string locImgUrl = $"../../img/locations/{Model.LocationId}.jpg"; 
+}
 <div class="container-fluid bg-3 text-center">    
   <h1>@Html.DisplayFor(model => model.Name)</h1>
+  <img src= @locImgUrl  class="img-responsive" style="width:100%" alt="Image">
+  <div class="row">
+    
+  </div>
   <div class="row">
     @if (@Model.Hosts.Count == 0)
     {
