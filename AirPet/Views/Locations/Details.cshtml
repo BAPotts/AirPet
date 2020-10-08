@@ -4,19 +4,22 @@
 
 @using AirPet.Models;
 @model AirPet.Models.Location;
+<div class="container-fluid bg-3 text-center">    
+  <h1>@Html.DisplayFor(model => model.Name)</h1>
+  <div class="row">
+    @if (@Model.Hosts.Count == 0)
+    {
+      <p>no items found</p>
+    }
 
-<h2>Location Details</h2>
-<hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-
-<ul>
-@if (@Model.Hosts.Count == 0)
-{
-  <p>no items found</p>
-}
-
-@foreach (Host host in @Model.Hosts)
-{
-  <li>Description: @host.Name</li>
-}
-</ul>
+    @foreach (Host host in @Model.Hosts)
+    {
+      string imgUrl = $"../../img/hosts/{host.HostId}.jpg"; 
+      <div class="col-sm-3">
+        <h3>@Html.ActionLink($"{host.Name}", "Details", new { id = host.HostId })</h3>
+        <img style="border-radius: 100%" src= @imgUrl  class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    }
+    </ul>
+  </div>
+</div>

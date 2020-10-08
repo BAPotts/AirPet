@@ -14,9 +14,9 @@
 
     @foreach (Location location in Model)
     {
-      string imgUrl = $"../img/{location.LocationId}.jpg"; 
+      string imgUrl = $"../img/locations/{location.LocationId}.jpg"; 
       <div class="col-sm-3">
-        <li>@Html.ActionLink($"{location.Name}", "Details", new { id = location.LocationId })</li>
+        <h3>@Html.ActionLink($"{location.Name}", "Details", new { id = location.LocationId })</h3>
         
         <img src= @imgUrl  class="img-responsive" style="width:100%" alt="Image">
       </div>
