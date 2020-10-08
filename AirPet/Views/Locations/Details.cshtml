@@ -16,7 +16,7 @@
     {
       string imgUrl = $"../../img/hosts/{host.HostId}.jpg"; 
       <div class="col-sm-3">
-        <h3>@Html.ActionLink($"{host.Name}", "Details", new { id = host.HostId })</h3>
+        <h3>@Html.ActionLink($"{host.Name}", "Details", "Hosts", new { id = host.HostId })</h3>
         <img style="border-radius: 100%" src= @imgUrl  class="img-responsive" style="width:100%" alt="Image">
       </div>
     }
