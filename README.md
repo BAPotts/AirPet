@@ -10,7 +10,7 @@
 <h3 align ='center'>•<a href='#requirements'> Requirements</a> •<a href='#setup'> Setup</a> •<a href='#technologies-used'> Technologies</a> •<a href='#❤️contributors'> Contributors</a> •<a href='#protecting-your-data'> Protecting Data</a> •<a href='#specifications'> Specs</a> •<a href='#cloning'> Cloning</a> •<a href='#app-settings'> AppSettings</a> •<a href='#database-with-migrations'> Database</a></h3>
 
 
-<h3 align='center'>AirP.E.T. is a website to connect people who are looking for a petsitter with those who want to petsit. Users looking for pet sitters open their homes for travelers looking for accomodations. Sitters save money on a place to stay, and those seeking petcare don't have to worry about boarding their pets, which is both stressful for the animal and expensive for their owner. </h3>
+<h3 align='center'>AirP.E.T. is a website to connect people who are looking for a petsitter with those who want to petsit. Users looking for pet sitters open their homes for travelers looking for accommodations. Sitters save money on a place to stay, and those seeking petcare don't have to worry about boarding their pets, which is both stressful for the animal and expensive for their owner. </h3>
 
 # **SPECIFICATIONS**
 

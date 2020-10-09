@@ -8,9 +8,14 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    
-    <p>Hello @User.Identity.Name!</p>
-    <p>Bio: User!</p> 
+    <div class="hero-image">
+    <div class="hero-text">
+      <h1><p>Hello @User.Identity.Name!</p></h1>
+      @* <p>(New friends included)</p> *@
+    </div>
+  </div> 
+    @* <p>Hello @User.Identity.Name!</p>
+    <p>Bio: User!</p>  *@
 
 
     
