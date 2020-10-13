@@ -36,10 +36,6 @@ namespace AirPet.Controllers
     public ActionResult Create(Profile profile)
     {
       _db.Profile.Add(profile);
-      // if (RecipeId != 0 )
-      // {
-      //   _db.RecipeTag.Add(new RecipeTag() { RecipeId = RecipeId, TagId = tag.TagId });
-      // }
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
